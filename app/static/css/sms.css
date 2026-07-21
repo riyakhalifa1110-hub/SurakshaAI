@@ -1,0 +1,30 @@
+.scanner-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+textarea{
+
+    resize:none;
+
+    border-radius:12px!important;
+
+    font-size:17px!important;
+}
+
+#analyzeBtn{
+
+    width:100%;
+
+    height:55px;
+
+    font-size:18px;
+
+    font-weight:600;
+}

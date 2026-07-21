@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}SurakshaAI{% endblock %}</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/variables.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sms.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+    <link rel="stylesheet"
+href="{{ url_for('static', filename='css/loading.css') }}">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/result.css') }}">
+
+    {% block css %}{% endblock %}
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:800,
+    once:true
+});
+</script>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar shadow">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="/">
+            🛡 SurakshaAI
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">🏠 Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/learn">🎓 Learn</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/emergency">🚨 Emergency</a>
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="scanDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown">
+
+                        {{ t.scan }}
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+
+                        <li><a class="dropdown-item" href="/sms">📩 {{ t.sms_detection }}</a></li>
+
+                        <li><a class="dropdown-item" href="/whatsapp">💬 {{ t.whatsapp_detection }}</a></li>
+
+                        <li><a class="dropdown-item" href="/upi">💳 {{ t.upi_detection }}</a></li>
+
+                        <li><a class="dropdown-item" href="/url">🔗 {{ t.url_scanner }}</a></li>
+
+                        <li><a class="dropdown-item" href="/call">📞 {{ t.call_transcript }}</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="nav-item dropdown">
+
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="languageDropdown"
+       role="button"
+       data-bs-toggle="dropdown">
+
+       🌐
+{% if current_language == 'en' %}
+English
+{% elif current_language == 'hi' %}
+हिन्दी
+{% elif current_language == 'gu' %}
+ગુજરાતી
+{% endif %}
+
+    </a>
+
+    <ul class="dropdown-menu dropdown-menu-end">
+
+        <li>
+            <a class="dropdown-item"
+               href="{{ url_for('set_language', lang='en') }}">
+                🇺🇸 English
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="{{ url_for('set_language', lang='hi') }}">
+                🇮🇳 हिन्दी
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="{{ url_for('set_language', lang='gu') }}">
+                🇮🇳 ગુજરાતી
+            </a>
+        </li>
+
+    </ul>
+
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="/about">ℹ️ About</a>
+</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= PAGE CONTENT ================= -->
+
+<main style="padding-top:90px;">
+
+{% block content %}
+{% endblock %}
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4 mb-4">
+
+                <h3>🛡 SurakshaAI</h3>
+
+                <p>
+                    AI-powered financial fraud prevention platform helping users detect
+                    SMS scams, WhatsApp fraud, phishing links, UPI scams and suspicious calls.
+                </p>
+
+            </div>
+
+            <div class="col-lg-4 mb-4">
+
+    <h4>Quick Links</h4>
+
+    <ul class="list-unstyled">
+
+        <li>
+            <a class="nav-link" href="/">
+                🏠 {{ t.home }}
+            </a>
+        </li>
+
+        <li>
+            <a class="nav-link" href="/learn">
+                🎓 {{ t.learn }}
+            </a>
+        </li>
+
+        <li>
+            <a class="nav-link" href="/about">
+                ℹ️ {{ t.about }}
+            </a>
+        </li>
+
+        <li>
+            <a class="nav-link" href="/emergency">
+                🚨 {{ t.emergency }}
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+            <div class="col-lg-4 mb-4">
+
+                <h4>Emergency Support</h4>
+
+                <p><strong>Cyber Crime Helpline:</strong> 1930</p>
+
+                <p>🌐 cybercrime.gov.in</p>
+
+                <p>Stay alert. Stay secure.</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center mb-0">
+
+            © 2026 <strong>SurakshaAI</strong> | AI Powered Financial Safety Assistant
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
+{% block js %}
+{% endblock %}
+
+
+
+<!-- AI Loading Overlay -->
+
+
+
+<div class="loading-overlay" id="loadingOverlay">
+
+    <div class="loading-box">
+
+        <div class="ai-circle"></div>
+
+        <div class="loading-title">
+
+            AI is Analyzing...
+
+        </div>
+
+        <div id="loadingStatus" class="loading-status">
+
+            Initializing...
+
+        </div>
+
+        <div class="progress mt-4">
+
+            <div class="progress-bar bg-success" style="width:0%;"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/loading.js') }}"></script>
+
+</body>
+
+</html>

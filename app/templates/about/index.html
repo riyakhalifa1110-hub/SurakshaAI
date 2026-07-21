@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.about }} | SurakshaAI{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+
+<section class="about-hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<span class="about-badge">
+🛡 {{ t.about_title }}
+</span>
+
+<h1 class="display-4 fw-bold mt-4">
+
+{{ t.about_heading1 }}
+
+<span class="text-info">
+{{ t.about_heading2 }}
+</span>
+
+</h1>
+
+<p class="lead mt-4">
+{{ t.about_desc }}
+</p>
+
+<div class="mt-5">
+
+<a href="/sms" class="btn btn-success btn-lg me-3">
+{{ t.start_scanning }}
+</a>
+
+<a href="/learn" class="btn btn-outline-light btn-lg">
+{{ t.learn_more }}
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<div class="about-image">
+
+<div class="shield-icon">
+🛡
+</div>
+
+<h2>{{ t.ai_security }}</h2>
+
+<p>{{ t.real_time_detection }}</p>
+
+<div class="feature-box">
+
+<div>📩 {{ t.sms_detection }}</div>
+<div>💬 {{ t.whatsapp_detection }}</div>
+<div>🔗 {{ t.url_scanner }}</div>
+<div>📞 {{ t.call_transcript }}</div>
+<div>💳 {{ t.upi_detection }}</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INFO -->
+
+<section class="container py-5">
+
+<div class="row g-4">
+
+<!-- Mission -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="info-card h-100">
+
+<h3>🎯 {{ t.mission }}</h3>
+
+<p>{{ t.mission_desc }}</p>
+
+</div>
+
+</div>
+
+<!-- Technology -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="info-card h-100">
+
+<h3>🤖 {{ t.ai_technology }}</h3>
+
+<ul>
+
+<li>{{ t.technology_python }}</li>
+<li>{{ t.technology_flask }}</li>
+<li>{{ t.technology_groq }}</li>
+<li>{{ t.technology_frontend }}</li>
+<li>{{ t.technology_js }}</li>
+<li>{{ t.technology_ocr }}</li>
+<li>{{ t.technology_speech }}</li>
+<li>{{ t.technology_tts }}</li>
+<li>{{ t.technology_nlp }}</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- Goal -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="info-card h-100">
+
+<h3>🚨 {{ t.goal }}</h3>
+
+<p>{{ t.goal_desc }}</p>
+
+</div>
+
+</div>
+
+<!-- Scam Detection -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="info-card h-100">
+
+<h3>🛡 {{ t.scam_detection }}</h3>
+
+<ul>
+<li>📩 {{ t.sms_detection_feature }}</li>
+<li>💬 {{ t.whatsapp_detection_feature }}</li>
+<li>💳 {{ t.upi_detection_feature }}</li>
+<li>🔗 {{ t.url_detection_feature }}</li>
+<li>📞 {{ t.call_detection_feature }}</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- Languages -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="info-card h-100">
+
+<h3>🌍 {{ t.supported_languages }}</h3>
+
+<ul>
+<li>🇬🇧 {{ t.english_language }}</li>
+<li>🇮🇳 {{ t.hindi_language }}</li>
+<li>🇮🇳 {{ t.gujarati_language }}</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- Smart Features -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="info-card h-100">
+
+<h3>⚡ {{ t.smart_features }}</h3>
+
+<ul>
+<li>🤖 {{ t.feature_ai }}</li>
+<li>📊 {{ t.feature_score }}</li>
+<li>💡 {{ t.feature_advice }}</li>
+<li>📷 {{ t.feature_ocr }}</li>
+<li>🎤 {{ t.feature_voice }}</li>
+<li>🔊 {{ t.feature_read }}</li>
+<li>🌍 {{ t.feature_multi }}</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}

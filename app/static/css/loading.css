@@ -1,0 +1,62 @@
+.loading-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(10,18,35,.92);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.loading-box{
+    width:420px;
+    background:#13284b;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    color:white;
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+.ai-circle{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border:6px solid rgba(255,255,255,.15);
+    border-top:6px solid #00e676;
+    margin:auto;
+    animation:spin 1s linear infinite;
+}
+
+.loading-title{
+    margin-top:25px;
+    font-size:26px;
+    font-weight:700;
+}
+
+.loading-status{
+    margin-top:20px;
+    color:#c7d8ff;
+    font-size:17px;
+    min-height:24px;
+}
+
+.progress{
+    margin-top:25px;
+    height:10px;
+    border-radius:30px;
+}
+
+.progress-bar{
+    animation:progressAnimation 4s linear forwards;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+@keyframes progressAnimation{
+    from{width:0%;}
+    to{width:100%;}
+}

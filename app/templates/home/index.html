@@ -1,0 +1,599 @@
+{% extends "base.html" %}
+
+{% block title %}SurakshaAI{% endblock %}
+
+{% block content %}
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Left -->
+
+            <div class="col-lg-6">
+
+                <div class="hero-badge">
+                    🛡 {{ t.hero_badge }}
+                </div>
+
+                <h1 class="display-3 fw-bold mt-3">
+
+                    {{ t.hero_title1 }}
+
+                    <span class="text-info">
+
+                        {{ t.hero_title2 }}
+
+                    </span>
+
+                </h1>
+
+                <p class="lead mt-4">
+
+                    {{ t.hero_description }}
+
+                </p>
+
+                <div class="mt-5">
+
+                    <a href="#quickscan"
+                       class="btn btn-success btn-lg me-3">
+
+                        {{ t.start_scanning }}
+
+                    </a>
+
+                    <a href="/learn"
+                       class="btn btn-outline-light btn-lg">
+
+                        {{ t.learn_more }}
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="col-lg-6 text-center">
+
+                <i class="fas fa-shield-alt"
+                   style="font-size:220px;color:white;"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUICK SCAN ================= -->
+
+<section id="quickscan" class="quick-scan py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2>{{ t.quick_scan }}</h2>
+
+            <p>{{ t.quick_scan_desc }}</p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- SMS -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a href="/sms" class="scan-card">
+
+                    <i class="fas fa-sms text-primary"></i>
+
+                    <h4>{{ t.sms_title }}</h4>
+
+                    <p>{{ t.sms_desc }}</p>
+
+                </a>
+
+            </div>
+
+            <!-- WhatsApp -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a href="/whatsapp" class="scan-card">
+
+                    <i class="fab fa-whatsapp text-success"></i>
+
+                    <h4>{{ t.whatsapp_title }}</h4>
+
+                    <p>{{ t.whatsapp_desc }}</p>
+
+                </a>
+
+            </div>
+
+            <!-- UPI -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a href="/upi" class="scan-card">
+
+                    <i class="fas fa-wallet text-warning"></i>
+
+                    <h4>{{ t.upi_title }}</h4>
+
+                    <p>{{ t.upi_desc }}</p>
+
+                </a>
+
+            </div>
+
+            <!-- URL -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a href="/url" class="scan-card">
+
+                    <i class="fas fa-link text-info"></i>
+
+                    <h4>{{ t.url_title }}</h4>
+
+                    <p>{{ t.url_desc }}</p>
+
+                </a>
+
+            </div>
+
+            <!-- Call -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a href="/call" class="scan-card">
+
+                    <i class="fas fa-phone-volume text-danger"></i>
+
+                    <h4>{{ t.call_title }}</h4>
+
+                    <p>{{ t.call_desc }}</p>
+
+                </a>
+
+            </div>
+
+            <!-- Learn -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a href="/learn" class="scan-card">
+
+                    <i class="fas fa-graduation-cap text-success"></i>
+
+                    <h4>{{ t.learn_title }}</h4>
+
+                    <p>{{ t.learn_desc }}</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="how-it-works py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2>{{ t.how_it_works }}</h2>
+
+            <p>{{ t.three_steps }}</p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Step 1 -->
+
+            <div class="col-md-4">
+
+                <div class="step-card">
+
+                    <div class="step-icon">
+                        📋
+                    </div>
+
+                    <h4>{{ t.step1 }}</h4>
+
+                    <p>{{ t.step1_desc }}</p>
+
+                </div>
+
+            </div>
+
+            <!-- Step 2 -->
+
+            <div class="col-md-4">
+
+                <div class="step-card">
+
+                    <div class="step-icon">
+                        🤖
+                    </div>
+
+                    <h4>{{ t.step2 }}</h4>
+
+                    <p>{{ t.step2_desc }}</p>
+
+                </div>
+
+            </div>
+
+            <!-- Step 3 -->
+
+            <div class="col-md-4">
+
+                <div class="step-card">
+
+                    <div class="step-icon">
+                        🛡️
+                    </div>
+
+                    <h4>{{ t.step3 }}</h4>
+
+                    <p>{{ t.step3_desc }}</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<!-- ================= IMPACT STATS ================= -->
+
+<section class="stats-section py-5" id="impact">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">{{ t.impact }}</h2>
+            <p class="text-muted">{{ t.impact_desc }}</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Messages -->
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="stat-card">
+                    <h1 class="text-primary counter" data-target="10000">0</h1>
+                    <p>{{ t.messages }}</p>
+                </div>
+            </div>
+
+            <!-- Scams -->
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="stat-card">
+                    <h1 class="text-danger counter" data-target="3000">0</h1>
+                    <p>{{ t.scams }}</p>
+                </div>
+            </div>
+
+            <!-- Accuracy -->
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="stat-card">
+                    <h1 class="text-success counter-percent" data-target="99">0%</h1>
+                    <p>{{ t.accuracy }}</p>
+                </div>
+            </div>
+
+            <!-- Protection -->
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="stat-card">
+                    <h1 class="text-info">24/7</h1>
+                    <p>{{ t.protection }}</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonial-section py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2>{{ t.trusted }}</h2>
+
+            <p>{{ t.trusted_desc }}</p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Testimonial 1 -->
+            <div class="col-lg-4">
+
+                <div class="testimonial-card">
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <p>{{ t.get('review1') }}</p>
+
+                    <h5 class="mt-3">
+                        Rahul Patel
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-lg-4">
+
+                <div class="testimonial-card">
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <p>{{ t.review2 }}</p>
+
+                    <h5 class="mt-3">
+                        Priya Shah
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-lg-4">
+
+                <div class="testimonial-card">
+
+                    <div class="mb-3">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <p>{{ t.review3 }}</p>
+
+                    <h5 class="mt-3">
+                        Amit Kumar
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= LATEST SCAM ALERTS ================= -->
+
+<section class="scam-alerts py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2>{{ t.alerts }}</h2>
+
+            <p>{{ t.alerts_desc }}</p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Alert 1 -->
+            <div class="col-md-4">
+
+                <div class="alert-card high">
+
+                    <h4>{{ t.fake_kyc_title }}</h4>
+
+                    <p>{{ t.fake_kyc_desc }}</p>
+
+                </div>
+
+            </div>
+
+            <!-- Alert 2 -->
+            <div class="col-md-4">
+
+                <div class="alert-card medium">
+
+                    <h4>{{ t.fake_upi_title }}</h4>
+
+                    <p>{{ t.fake_upi_desc }}</p>
+
+                </div>
+
+            </div>
+
+            <!-- Alert 3 -->
+            <div class="col-md-4">
+
+                <div class="alert-card low">
+
+                    <h4>{{ t.lottery_title }}</h4>
+
+                    <p>{{ t.lottery_desc }}</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= EMERGENCY ================= -->
+
+<section class="emergency-section py-5">
+
+    <div class="container">
+
+        <div class="emergency-box">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <h2>
+
+                        🚨 {{ t.emergency_title }}
+
+                    </h2>
+
+                    <p>
+
+                        {{ t.emergency_desc }}
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end">
+
+                    <a href="/emergency" class="btn-emergency">
+
+                        {{ t.call_1930 }}
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    function animateCounters() {
+
+        document.querySelectorAll(".counter").forEach(counter => {
+
+            const target = +counter.dataset.target;
+            let count = 0;
+
+            const update = () => {
+
+                const increment = target / 80;
+
+                if (count < target) {
+
+                    count += increment;
+
+                    if (target >= 1000) {
+                        counter.innerText = Math.floor(count / 1000) + "K+";
+                    } else {
+                        counter.innerText = Math.floor(count);
+                    }
+
+                    requestAnimationFrame(update);
+
+                } else {
+
+                    counter.innerText = (target / 1000) + "K+";
+
+                }
+
+            };
+
+            update();
+
+        });
+
+        document.querySelectorAll(".counter-percent").forEach(counter => {
+
+            const target = +counter.dataset.target;
+            let count = 0;
+
+            const update = () => {
+
+                if (count < target) {
+
+                    count++;
+
+                    counter.innerText = count + "%";
+
+                    requestAnimationFrame(update);
+
+                } else {
+
+                    counter.innerText = target + "%";
+
+                }
+
+            };
+
+            update();
+
+        });
+
+    }
+
+    const section = document.querySelector("#impact");
+
+    const observer = new IntersectionObserver((entries) => {
+
+        if (entries[0].isIntersecting) {
+
+            animateCounters();
+
+            observer.disconnect();
+
+        }
+
+    }, { threshold: 0.4 });
+
+    observer.observe(section);
+
+});
+</script>
+
+{% endblock %}
+

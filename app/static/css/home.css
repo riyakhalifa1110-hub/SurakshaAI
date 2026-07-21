@@ -1,0 +1,426 @@
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#071A52,#0B3C91,#0EA5E9);
+    color:#fff;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:850px;
+    margin:auto;
+}
+
+.hero-badge{
+    display:inline-block;
+    padding:10px 20px;
+    background:rgba(255,255,255,.15);
+    border-radius:50px;
+    font-size:15px;
+    margin-bottom:25px;
+    backdrop-filter:blur(8px);
+}
+
+.hero h1{
+    font-size:64px;
+    font-weight:800;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#7DD3FC;
+}
+
+.hero p{
+    font-size:22px;
+    color:#E2E8F0;
+    max-width:700px;
+    margin:0 auto 40px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-primary-custom{
+    background:#22C55E;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary-custom:hover{
+    background:#16A34A;
+    color:#fff;
+}
+
+.btn-secondary-custom{
+    background:transparent;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 34px;
+    border:2px solid #fff;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-secondary-custom:hover{
+    background:#fff;
+    color:#071A52;
+}
+
+
+.quick-scan{
+    background:#F8FAFC;
+}
+
+.quick-scan h2{
+    font-size:42px;
+    font-weight:700;
+}
+
+.quick-scan p{
+    color:#64748B;
+}
+
+.scan-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:220px;
+
+    background:white;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    color:#0F172A;
+
+    font-size:50px;
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.scan-card h4{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    font-weight:600;
+}
+
+.scan-card:hover{
+
+    transform:translateY(-10px);
+
+    color:#0F172A;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+
+
+.how-it-works{
+    background:#ffffff;
+}
+
+.step-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.step-icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.step-card h4{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.step-card p{
+
+    font-size:16px;
+
+    color:#666;
+
+}
+
+
+
+.scam-alerts{
+    background:#F8FAFC;
+}
+
+.alert-card{
+
+    border-radius:20px;
+
+    padding:35px;
+
+    height:100%;
+
+    color:white;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.alert-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.alert-card h4{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.alert-card p{
+
+    color:rgba(255,255,255,.95);
+
+    font-size:19px;
+
+    line-height:1.7;
+
+}
+
+.high{
+
+    background:#DC2626;
+
+}
+
+.medium{
+
+    background:#F59E0B;
+
+}
+
+.low{
+
+    background:#16A34A;
+
+}
+
+
+
+
+
+.emergency-section{
+    background:#ffffff;
+}
+
+.emergency-box{
+
+    background:linear-gradient(135deg,#DC2626,#EF4444);
+
+    color:white;
+
+    padding:50px;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 40px rgba(220,38,38,.25);
+}
+
+.emergency-box h2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.emergency-box p{
+
+    font-size:18px;
+
+    margin:0;
+}
+
+.btn-emergency{
+
+    display:inline-block;
+
+    background:white;
+
+    color:#DC2626;
+
+    text-decoration:none;
+
+    padding:16px 30px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn-emergency:hover{
+
+    background:#F8FAFC;
+
+    color:#B91C1C;
+}
+
+
+
+
+
+/* ===== Quick Scan Cards ===== */
+
+.scan-card{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:#fff;
+    border-radius:18px;
+
+    padding:30px;
+
+    min-height:260px;
+
+    text-decoration:none;
+
+    color:#222;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    overflow:hidden;
+
+}
+
+.scan-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.scan-card i{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.scan-card h4{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.scan-card p{
+
+    font-size:17px;
+
+    line-height:1.6;
+
+    color:#6c757d;
+
+    margin:0;
+
+}
+
+.stat-number{
+
+font-size:42px;
+
+font-weight:700;
+
+color:#0d6efd;
+
+}
+
+.stats-section{
+    background:#f5f8fc;
+    padding:80px 0;
+}
+
+.stat-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+}
+
+.stat-card h1{
+    font-size:60px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.stat-card p{
+    font-size:20px;
+    color:#64748B;
+    font-weight:600;
+    margin:0;
+}

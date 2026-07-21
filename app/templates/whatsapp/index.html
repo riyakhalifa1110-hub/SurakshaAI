@@ -1,0 +1,339 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.whatsapp_detection }}{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+
+    <div class="container">
+
+        <h1>💬 {{ t.whatsapp_page_title }}</h1>
+
+        <p>{{ t.whatsapp_page_desc }}</p>
+
+    </div>
+
+</section>
+
+<section class="pb-5">
+
+<div class="container">
+
+<div class="scanner-card">
+
+<form method="POST"
+      enctype="multipart/form-data"
+      onsubmit="showLoading()">
+
+    <label class="form-label">
+        {{ t.paste_whatsapp }}
+    </label>
+
+    <textarea
+        id="whatsappInput"
+        name="message"
+        class="form-control"
+        rows="10"
+        placeholder="{{ t.whatsapp_placeholder }}"></textarea>
+
+    <hr>
+
+    <label class="form-label">
+        📷 {{ t.upload_whatsapp_screenshot }}
+    </label>
+
+    <input
+        type="file"
+        name="image"
+        accept="image/*"
+        class="form-control">
+
+    <div class="mt-2">
+
+        <button
+            type="button"
+            id="voiceBtn"
+            class="btn btn-outline-secondary">
+
+            🎤 {{ t.speak }}
+
+        </button>
+
+    </div>
+
+    <button
+        type="submit"
+        class="btn btn-success mt-4 w-100">
+
+        {{ t.analyze_chat }}
+
+    </button>
+
+</form>
+
+</div>
+
+{% if extracted_text %}
+
+<div class="alert alert-info mt-4">
+
+    <h5>📄 OCR Extracted Text</h5>
+
+    <pre style="white-space: pre-wrap;">{{ extracted_text }}</pre>
+
+</div>
+
+{% endif %}
+
+
+{% if result %}
+
+<div class="result-card mt-4">
+
+<div class="result-header">
+
+<h3>{{ t.ai_report }}</h3>
+
+<span class="risk-badge
+{% if result.score == 0 %}
+low
+{% elif result.score < 40 %}
+low
+{% elif result.score < 80 %}
+medium
+{% else %}
+high
+{% endif %}
+">
+
+{% if result.score == 0 %}
+SAFE
+{% elif result.score < 40 %}
+LOW RISK
+{% elif result.score < 80 %}
+MEDIUM RISK
+{% else %}
+HIGH RISK
+{% endif %}
+</span>
+
+</div>
+
+<h5>{{ t.risk_score }}</h5>
+
+<div class="progress">
+
+<div
+class="progress-bar
+{% if result.score >= 80 %}
+bg-danger
+{% elif result.score >= 40 %}
+bg-warning
+{% else %}
+bg-success
+{% endif %}"
+style="width: {{ result.score }}%;">
+</div>
+
+</div>
+
+<p class="mt-2">
+<strong>{{ result.score }}%</strong>
+</p>
+
+<div class="reason-box">
+
+<div class="section-title">
+
+{{ t.why_ai }}
+
+</div>
+
+<div id="analysisResult">
+
+<ul>
+
+{% for r in result.reason %}
+
+<li>{{ r }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="advice-box">
+
+<div class="section-title">
+
+{{ t.safety_advice }}
+
+</div>
+
+<ul>
+
+{% for a in result.advice %}
+
+<li>{{ a }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+<button
+type="button"
+id="speakBtn"
+class="btn btn-outline-primary mt-3">
+
+🔊 {{ t.read_result }}
+
+</button>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</section>
+
+<script>
+
+window.onload=function(){
+
+hideLoading();
+
+}
+
+</script>
+
+<script>
+
+const voiceBtn = document.getElementById("voiceBtn");
+
+if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+
+    const SpeechRecognition =
+        window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const recognition = new SpeechRecognition();
+
+    recognition.lang = "en-IN";
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    let listening = false;
+
+    voiceBtn.onclick = () => {
+
+        if (!listening) {
+
+            recognition.start();
+
+        } else {
+
+            recognition.stop();
+
+        }
+
+    };
+
+    recognition.onstart = () => {
+
+        listening = true;
+        voiceBtn.innerHTML = "⏹ Stop Listening";
+
+    };
+
+    recognition.onresult = (event) => {
+
+        document.getElementById("whatsappInput").value =
+            event.results[0][0].transcript;
+
+    };
+
+    recognition.onend = () => {
+
+        listening = false;
+        voiceBtn.innerHTML = "🎤 {{ t.speak }}";
+
+    };
+
+    recognition.onerror = () => {
+
+        listening = false;
+        voiceBtn.innerHTML = "🎤 {{ t.speak }}";
+
+    };
+
+}
+
+</script>
+
+<script>
+
+const speakBtn=document.getElementById("speakBtn");
+
+if(speakBtn){
+
+let speaking=false;
+
+speakBtn.onclick=()=>{
+
+if(speaking){
+
+window.speechSynthesis.cancel();
+
+speaking=false;
+
+speakBtn.innerHTML="🔊 {{ t.read_result }}";
+
+return;
+
+}
+
+const result=document.getElementById("analysisResult");
+
+if(!result) return;
+
+const speech=new SpeechSynthesisUtterance(result.innerText);
+
+speech.lang="en-IN";
+
+speech.rate=1;
+
+speech.pitch=1;
+
+speech.onstart=()=>{
+
+speaking=true;
+
+speakBtn.innerHTML="⏹ {{ t.stop_reading }}";
+
+};
+
+speech.onend=()=>{
+
+speaking=false;
+
+speakBtn.innerHTML="🔊 {{ t.read_result }}";
+
+};
+
+window.speechSynthesis.cancel();
+
+window.speechSynthesis.speak(speech);
+
+};
+
+}
+
+</script>
+
+{% endblock %}

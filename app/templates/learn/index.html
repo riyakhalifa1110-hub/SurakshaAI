@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.learn }} | SurakshaAI{% endblock %}
+
+{% block content %}
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="learn-hero">
+
+<div class="container">
+
+<div class="text-center">
+
+<span class="learn-badge">
+{{ t['learn_badge'] }}
+</span>
+
+<h1 class="display-4 fw-bold mt-4">
+{{ t['learn_heading1'] }}
+<span class="text-info">
+{{ t['learn_heading2'] }}
+</span>
+</h1>
+
+<p class="lead mt-4">
+{{ t['learn_description'] }}
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SCAMS ================= -->
+
+<section class="container py-5">
+
+<div class="text-center mb-5">
+
+<h2>{{ t['popular_scams'] }}</h2>
+
+<p>{{ t['popular_scams_desc'] }}</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="learn-card">
+<div class="icon">📩</div>
+
+<h4>{{ t['sms_scam'] }}</h4>
+
+<p>{{ t['sms_scam_desc'] }}</p>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="learn-card">
+<div class="icon">💬</div>
+
+<h4>{{ t['whatsapp_scam'] }}</h4>
+
+<p>{{ t['whatsapp_scam_desc'] }}</p>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="learn-card">
+<div class="icon">💳</div>
+
+<h4>{{ t['upi_fraud'] }}</h4>
+
+<p>{{ t['upi_fraud_desc'] }}</p>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="learn-card">
+<div class="icon">🔗</div>
+
+<h4>{{ t['phishing'] }}</h4>
+
+<p>{{ t['phishing_desc'] }}</p>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="learn-card">
+<div class="icon">📞</div>
+
+<h4>{{ t['fake_call'] }}</h4>
+
+<p>{{ t['fake_call_desc'] }}</p>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="learn-card">
+<div class="icon">🎁</div>
+
+<h4>{{ t['lottery'] }}</h4>
+
+<p>{{ t['lottery_desc'] }}</p>
+
+</div>
+</div>
+
+</div>
+
+</section>
+<!-- ================= SAFETY TIPS ================= -->
+
+<section class="tips-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2>{{ t['safety_tips'] }}</h2>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<ul class="tips-list">
+
+<li>✅ {{ t['tip1'] }}</li>
+
+<li>✅ {{ t['tip2'] }}</li>
+
+<li>✅ {{ t['tip3'] }}</li>
+
+<li>✅ {{ t['tip4'] }}</li>
+
+<li>✅ {{ t['tip5'] }}</li>
+
+
+</ul>
+
+</div>
+
+<div class="col-md-6">
+
+<ul class="tips-list">
+
+<li>✅ {{ t['tip6'] }}</li>
+
+<li>✅ {{ t['tip7'] }}</li>
+
+<li>✅ {{ t['tip8'] }}</li>
+
+<li>✅ {{ t['tip9'] }}</li>
+
+<li>✅ {{ t['tip10'] }}</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= HELP ================= -->
+
+<section class="container py-5 text-center">
+
+<h2>{{ t['need_help'] }}</h2>
+
+<p>
+
+{{ t['need_help_desc'] }}
+
+</p>
+
+<a href="/emergency" class="btn btn-danger btn-lg">
+
+{{ t['emergency_help'] }}
+
+</a>
+
+</section>
+
+{% endblock %}

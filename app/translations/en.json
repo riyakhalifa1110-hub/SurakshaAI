@@ -1,0 +1,260 @@
+{
+  "home": "Home",
+  "learn": "Learn",
+  "emergency": "Emergency",
+  "scan": "Scan",
+  "about": "About",
+  "language": "Language",
+
+  "sms_detection": "SMS Detection",
+  "whatsapp_detection": "WhatsApp Detection",
+  "upi_detection": "UPI Detection",
+  "url_scanner": "URL Scanner",
+  "call_transcript": "Call Transcript",
+
+  "hero_badge": "AI Powered Cyber Protection",
+  "hero_title1": "Stay Safe From",
+  "hero_title2": "Financial Fraud",
+  "hero_description": "Protect yourself from fake SMS, WhatsApp scams, UPI fraud, phishing websites and scam calls using AI.",
+  "start_scanning": "Start Scanning",
+  "learn_more": "Learn More",
+
+  "quick_scan": "Quick Scan",
+  "quick_scan_desc": "Select what you want to scan",
+
+  "sms_title": "SMS Scanner",
+  "sms_desc": "Detect scam SMS instantly.",
+
+  "whatsapp_title": "WhatsApp Scanner",
+  "whatsapp_desc": "Analyze suspicious chats.",
+
+  "upi_title": "UPI Fraud",
+  "upi_desc": "Detect fake payment requests.",
+
+  "url_title": "URL Scanner",
+  "url_desc": "Check suspicious links.",
+
+  "call_title": "Call Transcript",
+  "call_desc": "Analyze scam conversations.",
+
+  "learn_title": "Cyber Safety",
+  "learn_desc": "Improve cyber awareness.",
+
+  "how_it_works": "How It Works",
+  "three_steps": "Three Simple Steps",
+
+  "step1": "Paste",
+  "step1_desc": "Paste SMS, WhatsApp chat, URL, UPI request or Call Transcript.",
+
+  "step2": "AI Analysis",
+  "step2_desc": "Our AI analyzes fraud patterns within seconds.",
+
+  "step3": "Stay Safe",
+  "step3_desc": "Receive Risk Score, Reasons and Safety Advice.",
+
+  "impact": "SurakshaAI Impact",
+  "impact_desc": "Protecting users from financial fraud with AI-powered security.",
+
+  "messages": "Messages Analyzed",
+  "scams": "Scams Detected",
+  "accuracy": "Detection Accuracy",
+  "protection": "AI Protection",
+
+  "trusted": "Trusted by Users",
+  "trusted_desc": "Helping people avoid online financial fraud.",
+
+  "alerts": "Latest Scam Alerts",
+  "alerts_desc": "Stay informed about the latest online fraud techniques.",
+
+  "emergency_title": "Think You've Been Scammed?",
+  "emergency_desc": "If you've shared your OTP, UPI PIN or transferred money, report the fraud immediately.",
+  "call_1930": "Call 1930",
+
+  "footer_about": "AI-powered financial fraud prevention platform helping users detect SMS scams, WhatsApp fraud, phishing links, UPI scams and suspicious calls.",
+
+  "quick_links": "Quick Links",
+  "support": "Emergency Support",
+
+  "copyright": "AI Powered Financial Safety Assistant",
+  "cyber_helpline":"Cyber Crime Helpline",
+"report_fraud":"Report online financial fraud immediately.",
+"cyber_portal":"Cyber Crime Portal",
+"visit_portal":"Visit Portal",
+"what_to_do":"What should you do?",
+"do1":"Don't share OTP.",
+"do2":"Don't share your UPI PIN.",
+"do3":"Don't click suspicious links.",
+"do4":"Block your bank account immediately.",
+"do5":"Call your bank.",
+"do6":"Report to Cyber Crime (1930).",
+"do7":"Change your passwords.",
+"about_title":"About SurakshaAI",
+"about_heading1":"Protecting Every Indian From",
+"about_heading2":"Digital Financial Fraud",
+"about_desc":"SurakshaAI is an AI-powered financial safety assistant designed to protect users from fake SMS, phishing websites, WhatsApp scams, fraudulent UPI requests and scam calls. Using Artificial Intelligence, our platform analyzes suspicious content within seconds and provides easy-to-understand safety advice.",
+
+"ai_security":"AI Security",
+"real_time_detection":"Real-time Scam Detection",
+
+"mission":"Mission",
+"mission_desc":"Empower every citizen to identify digital scams before becoming victims.",
+
+"ai_technology":"AI Technology",
+"ai_desc":"Powered using Python, Flask, OpenRouter AI, Bootstrap and intelligent fraud detection.",
+
+"goal":"Goal",
+"goal_desc":"Reduce cyber fraud and make digital payments safer for everyone.",
+
+"learn_badge": "🎓 Learn Cyber Safety",
+"learn_heading1": "Stay One Step Ahead",
+"learn_heading2": "of Online Scammers",
+"learn_description": "Learn how cyber criminals trick people and how you can protect yourself while using UPI, WhatsApp, SMS and online banking.",
+
+"popular_scams": "Popular Online Scams",
+"popular_scams_desc": "Understand the tricks scammers commonly use.",
+
+"sms_scam": "SMS Scam",
+"sms_scam_desc": "Never click unknown banking links or OTP verification messages.",
+
+"whatsapp_scam": "WhatsApp Scam",
+"whatsapp_scam_desc": "Beware of messages asking for money, OTPs or urgent help.",
+
+"upi_fraud": "UPI Fraud",
+"upi_fraud_desc": "Receiving money never requires entering your UPI PIN.",
+
+"phishing": "Phishing Website",
+"phishing_desc": "Always check the website URL before entering passwords.",
+
+"fake_call": "Fake Call",
+"fake_call_desc": "Banks never ask for OTP, CVV or ATM PIN over phone calls.",
+
+"lottery": "Lottery Scam",
+
+
+"safety_tips": "Safety Tips",
+
+"tip1": "Never share OTP with anyone.",
+"tip2": "Never share your UPI PIN.",
+"tip3": "Enable Two-Factor Authentication.",
+"tip4": "Verify unknown callers before sending money.",
+"tip5": "Install apps only from trusted sources.",
+"tip6": "Check URLs carefully.",
+"tip7": "Report scams to Cyber Crime Portal.",
+"tip8": "Block suspicious WhatsApp numbers.",
+"tip9": "Keep your phone updated.",
+"tip10": "Use SurakshaAI before trusting any message.",
+
+"need_help": "Need Help?",
+"need_help_desc": "If you believe you've been scammed, immediately report it using the Emergency section of SurakshaAI.",
+"emergency_help": "🚨 Emergency Help",
+"emergency_page_title": "🚨 Emergency Help",
+"emergency_page_desc": "Think you've been scammed? Act immediately.",
+"call_now": "Call 1930",
+"what_should_do": "What should you do?",
+"sms_page_title": "SMS Scam Detection",
+"sms_page_desc": "Paste any SMS below and let SurakshaAI check if it is safe.",
+
+"paste_sms": "Paste SMS",
+"sms_placeholder": "Paste the suspicious SMS here...",
+
+"speak": "Speak",
+"listening": "Listening...",
+
+"analyze_sms": "Analyze SMS",
+
+"ai_report": "AI Analysis Report",
+
+"risk_score": "Risk Score",
+
+"why_ai": "Why did AI mark this?",
+
+"safety_advice": "Safety Advice",
+
+"read_result": "Read Result",
+"stop_reading": "Stop Reading",
+
+"whatsapp_page_title":"WhatsApp Scam Detection",
+"whatsapp_page_desc":"Paste any WhatsApp conversation below and let SurakshaAI analyze it.",
+"paste_whatsapp":"Paste WhatsApp Chat",
+"whatsapp_placeholder":"Paste WhatsApp chat here...",
+"analyze_chat":"Analyze Chat",
+
+"upi_page_title":"UPI Fraud Detection",
+
+"upi_page_desc":"Paste any UPI payment message or payment request below for AI analysis.",
+
+"paste_upi":"Paste UPI Message",
+
+"upi_placeholder":"Paste UPI payment message here...",
+
+"analyze_upi":"Analyze UPI",
+
+"url_page_title":"URL Phishing Detection",
+
+"url_page_desc":"Paste a suspicious website URL below for AI analysis.",
+
+"paste_url":"Paste URL",
+
+"url_placeholder":"https://example.com",
+
+"analyze_url":"Analyze URL",
+
+"call_page_title":"Call Scam Detection",
+
+"call_page_desc":"Paste the transcript of a suspicious phone call for AI analysis.",
+
+"call_transcript_label":"Call Transcript",
+
+"call_placeholder":"Paste the call transcript here...",
+
+"analyze_call":"Analyze Call",
+"fake_kyc_title":"🚨 Fake Bank KYC",
+"fake_kyc_desc":"Banks never ask you to update KYC using random SMS links.",
+
+"fake_upi_title":"💳 Fake UPI Collect Request",
+"fake_upi_desc":"Receiving money never requires entering your UPI PIN.",
+
+"lottery_title":"🎁 Lottery & Gift Scam",
+"lottery_desc":"Ignore messages claiming you've won money or expensive gifts.",
+
+
+
+
+"review1":"SurakshaAI detected a fake SBI SMS before I clicked the link.",
+"review2":"I almost approved a fake UPI request. SurakshaAI warned me instantly.",
+"review3":"The URL Scanner helped me avoid a phishing website pretending to be my bank.",
+"scam_detection": "Scam Detection",
+"supported_languages": "Supported Languages",
+"smart_features": "Smart Features",
+
+"technology_python": "Python 3",
+"technology_flask": "Flask Framework",
+"technology_groq": "Groq Llama 3.3 AI",
+"technology_frontend": "HTML5, CSS3 & Bootstrap 5",
+"technology_js": "JavaScript",
+"technology_ocr": "Tesseract OCR",
+"technology_speech": "Speech Recognition",
+"technology_tts": "Speech Synthesis",
+"technology_nlp": "Natural Language Processing (NLP)",
+
+"sms_detection_feature": "SMS Scam Detection",
+"whatsapp_detection_feature": "WhatsApp Scam Detection",
+"upi_detection_feature": "UPI Fraud Detection",
+"url_detection_feature": "URL Phishing Detection",
+"call_detection_feature": "Call Scam Detection",
+
+"english_language": "English",
+"hindi_language": "Hindi",
+"gujarati_language": "Gujarati",
+
+"feature_ai": "AI Risk Analysis",
+"feature_score": "Risk Score",
+"feature_advice": "Safety Advice",
+"feature_ocr": "OCR Screenshot Analysis",
+"feature_voice": "Voice Input",
+"feature_read": "Read Result Aloud",
+"feature_multi": "Multilingual AI Responses",
+"upload_whatsapp_screenshot": "Upload WhatsApp Screenshot",
+"upload_voice_recording": "Upload Voice Recording"
+
+}
