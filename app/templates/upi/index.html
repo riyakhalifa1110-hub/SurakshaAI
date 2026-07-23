@@ -174,9 +174,72 @@ class="btn btn-outline-primary mt-3">
 
 </button>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const score = Number("{{ result.score }}");
+
+    if (score === 0) {
+
+        Swal.fire({
+            icon: "success",
+            title: "{{ t.popup_safe_title }}",
+            html: `
+                <h3>{{ t.popup_safe_heading }}</h3>
+                <p>{{ t.popup_safe_text }}</p>
+                <h4>🛡 {{ t.popup_risk_score }}: <b>${score}%</b></h4>
+            `,
+            confirmButtonText: "{{ t.popup_safe_button }}",
+            confirmButtonColor: "#198754"
+        });
+
+    }
+
+    else if (score < 80) {
+
+        Swal.fire({
+            icon: "warning",
+            title: "{{ t.popup_warning_title }}",
+            html: `
+                <h3>{{ t.popup_warning_heading }}</h3>
+                <p>{{ t.popup_warning_text }}</p>
+                <h4>🔍 {{ t.popup_risk_score }}: <b>${score}%</b></h4>
+            `,
+            confirmButtonText: "{{ t.popup_warning_button }}",
+            confirmButtonColor: "#ffc107"
+        });
+
+    }
+
+    else {
+
+        Swal.fire({
+            icon: "error",
+            title: "{{ t.popup_scam_title }}",
+            html: `
+                <h3>{{ t.popup_scam_heading }}</h3>
+                <p>{{ t.popup_scam_text1 }}</p>
+                <p>{{ t.popup_scam_text2 }}</p>
+                <h4>🔥 {{ t.popup_risk_score }}: <b>${score}%</b></h4>
+            `,
+            confirmButtonText: "{{ t.popup_scam_button }}",
+            confirmButtonColor: "#dc3545"
+        });
+
+    }
+
+});
+
+</script>
 </div>
 
 {% endif %}
+
+</section>
+
+{% endblock %}
+
 
 </div>
 
@@ -314,4 +377,3 @@ window.speechSynthesis.speak(speech);
 
 </script>
 
-{% endblock %}

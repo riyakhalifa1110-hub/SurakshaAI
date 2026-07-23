@@ -424,3 +424,66 @@ color:#0d6efd;
     font-weight:600;
     margin:0;
 }
+
+
+/* ================= HERO SHIELD ANIMATION ================= */
+
+.hero-shield{
+    font-size:220px;
+    color:white;
+    animation: floatShield 4s ease-in-out infinite;
+}
+
+@keyframes floatShield{
+
+0%{
+    transform:translateY(0px);
+}
+
+50%{
+    transform:translateY(-15px);
+}
+
+100%{
+    transform:translateY(0px);
+}
+
+}
+
+
+.hero-badge{
+    animation: pulseBadge 2.5s infinite;
+}
+
+@keyframes pulseBadge{
+
+0%{
+    transform:scale(1);
+}
+
+50%{
+    transform:scale(1.05);
+}
+
+100%{
+    transform:scale(1);
+}
+
+}
+
+
+/* How It Works */
+
+.how-title{
+    font-size: 3rem;
+    font-weight: 700;   /* was 800 */
+    color:#1f2937;
+    margin-bottom:10px;
+}
+
+.how-subtitle{
+    font-size:1.35rem;
+    font-weight:500;    /* was 600 */
+    color:#64748b;
+    margin-bottom:60px;
+}

@@ -12,7 +12,7 @@
   "url_scanner": "URL Scanner",
   "call_transcript": "Call Transcript",
 
-  "hero_badge": "AI Powered Cyber Protection",
+  
   "hero_title1": "Stay Safe From",
   "hero_title2": "Financial Fraud",
   "hero_description": "Protect yourself from fake SMS, WhatsApp scams, UPI fraud, phishing websites and scam calls using AI.",
@@ -255,6 +255,41 @@
 "feature_read": "Read Result Aloud",
 "feature_multi": "Multilingual AI Responses",
 "upload_whatsapp_screenshot": "Upload WhatsApp Screenshot",
-"upload_voice_recording": "Upload Voice Recording"
+"upload_voice_recording": "Upload Voice Recording",
+
+"popup_safe_title": "🟢 SAFE",
+"popup_safe_heading": "✅ No Scam Detected",
+"popup_safe_text": "This content appears to be safe.",
+"popup_safe_button": "👍 OK",
+
+"popup_warning_title": "🟡 SUSPICIOUS",
+"popup_warning_heading": "⚠️ Be Careful",
+"popup_warning_text": "This content contains suspicious indicators.",
+"popup_warning_button": "👀 View Report",
+
+"popup_scam_title": "🚨 SCAM DETECTED",
+"popup_scam_heading": "❌ High Risk Content",
+"popup_scam_text1": "🚫 Don't click suspicious links.",
+"popup_scam_text2": "🔒 Don't share OTP, PIN or Bank Details.",
+"popup_scam_button": "🛡 Read Report",
+
+"popup_risk_score": "Risk Score",
+
+"english": "🇬🇧 English",
+"hindi": "🇮🇳 हिन्दी",
+"gujarati": "🇮🇳 ગુજરાતી",
+
+
+
+"hero_subtitle": " Built for First-Time Digital Banking Users, Senior Citizens and Rural India.",
+
+"challenge_title": "Financial Safety for Rural India",
+
+"challenge_description": "SurakshaAI helps first-time digital banking users, senior citizens and rural communities detect fake SMS, WhatsApp scams, fraudulent UPI requests, phishing websites and scam calls using Artificial Intelligence.",
+
+"hero_badge": "AI Financial Safety Assistant"
+
+
+
 
 }

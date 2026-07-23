@@ -112,39 +112,39 @@ AOS.init({
        href="#"
        id="languageDropdown"
        role="button"
-       data-bs-toggle="dropdown">
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
 
-       🌐
-{% if current_language == 'en' %}
-English
-{% elif current_language == 'hi' %}
-हिन्दी
-{% elif current_language == 'gu' %}
-ગુજરાતી
-{% endif %}
+        🌐 {{ t.language }}
 
     </a>
 
     <ul class="dropdown-menu dropdown-menu-end">
 
         <li>
-            <a class="dropdown-item"
+            <a class="dropdown-item {% if current_language=='en' %}active{% endif %}"
                href="{{ url_for('set_language', lang='en') }}">
-                🇺🇸 English
+
+               {{ t.english }}
+
             </a>
         </li>
 
         <li>
-            <a class="dropdown-item"
+            <a class="dropdown-item {% if current_language=='hi' %}active{% endif %}"
                href="{{ url_for('set_language', lang='hi') }}">
-                🇮🇳 हिन्दी
+
+               {{ t.hindi }}
+
             </a>
         </li>
 
         <li>
-            <a class="dropdown-item"
+            <a class="dropdown-item {% if current_language=='gu' %}active{% endif %}"
                href="{{ url_for('set_language', lang='gu') }}">
-                🇮🇳 ગુજરાતી
+
+                {{ t.gujarati }}
+
             </a>
         </li>
 
@@ -298,6 +298,8 @@ English
 </div>
 
 <script src="{{ url_for('static', filename='js/loading.js') }}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

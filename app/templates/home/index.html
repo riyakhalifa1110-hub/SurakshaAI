@@ -17,10 +17,9 @@
 
             <div class="col-lg-6">
 
-                <div class="hero-badge">
-                    🛡 {{ t.hero_badge }}
-                </div>
-
+               <div class="hero-badge">
+    🛡 {{ t.hero_badge }}
+</div>
                 <h1 class="display-3 fw-bold mt-3">
 
                     {{ t.hero_title1 }}
@@ -33,18 +32,18 @@
 
                 </h1>
 
-                <p class="lead mt-4">
+               <p class="lead mt-4">
+    {{ t.hero_description }}
+</p>
 
-                    {{ t.hero_description }}
 
-                </p>
 
                 <div class="mt-5">
 
                     <a href="#quickscan"
                        class="btn btn-success btn-lg me-3">
 
-                        {{ t.start_scanning }}
+                     {{ t.start_scanning }}
 
                     </a>
 
@@ -203,9 +202,13 @@
 
         <div class="text-center mb-5">
 
-            <h2>{{ t.how_it_works }}</h2>
+            <h2 class="how-title">
+    {{ t.how_it_works }}
+</h2>
 
-            <p>{{ t.three_steps }}</p>
+<p class="how-subtitle">
+    {{ t.three_steps }}
+</p>
 
         </div>
 

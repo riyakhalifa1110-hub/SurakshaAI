@@ -12,7 +12,7 @@
   "url_scanner": "यूआरएल जांच",
   "call_transcript": "कॉल ट्रांसक्रिप्ट",
 
-  "hero_badge": "एआई संचालित साइबर सुरक्षा",
+  
   "hero_title1": "सुरक्षित रहें",
   "hero_title2": "वित्तीय धोखाधड़ी से",
   "hero_description": "AI की सहायता से नकली SMS, WhatsApp, UPI, फ़िशिंग वेबसाइट और धोखाधड़ी वाले कॉल से सुरक्षित रहें।",
@@ -262,6 +262,38 @@
 "feature_read": "परिणाम सुनें",
 "feature_multi": "बहुभाषी AI उत्तर",
 "upload_whatsapp_screenshot": "व्हाट्सएप स्क्रीनशॉट अपलोड करें",
-"upload_voice_recording": "वॉइस रिकॉर्डिंग अपलोड करें"
+"upload_voice_recording": "वॉइस रिकॉर्डिंग अपलोड करें",
+
+"popup_safe_title": "🟢 सुरक्षित",
+"popup_safe_heading": "✅ कोई धोखाधड़ी नहीं मिली",
+"popup_safe_text": "यह सामग्री सुरक्षित प्रतीत होती है।",
+"popup_safe_button": "👍 ठीक है",
+
+"popup_warning_title": "🟡 संदिग्ध",
+"popup_warning_heading": "⚠️ सावधान रहें",
+"popup_warning_text": "इस सामग्री में संदिग्ध संकेत मिले हैं।",
+"popup_warning_button": "👀 रिपोर्ट देखें",
+
+"popup_scam_title": "🚨 धोखाधड़ी मिली",
+"popup_scam_heading": "❌ उच्च जोखिम वाली सामग्री",
+"popup_scam_text1": "🚫 संदिग्ध लिंक पर क्लिक न करें।",
+"popup_scam_text2": "🔒 OTP, PIN या बैंक विवरण साझा न करें।",
+"popup_scam_button": "🛡 रिपोर्ट पढ़ें",
+
+"popup_risk_score": "जोखिम स्कोर",
+
+
+"english": "🇬🇧 English",
+"hindi": "🇮🇳 हिन्दी",
+"gujarati": "🇮🇳 ગુજરાતી",
+
+
+
+"hero_subtitle": " पहली बार डिजिटल बैंकिंग करने वाले उपयोगकर्ताओं, वरिष्ठ नागरिकों और ग्रामीण भारत के लिए बनाया गया।",
+"challenge_title": "ग्रामीण भारत के लिए वित्तीय सुरक्षा",
+
+"challenge_description": "SurakshaAI पहली बार डिजिटल बैंकिंग करने वाले उपयोगकर्ताओं, वरिष्ठ नागरिकों और ग्रामीण समुदायों को AI की मदद से फर्जी SMS, WhatsApp स्कैम, नकली UPI अनुरोध, फ़िशिंग वेबसाइट और धोखाधड़ी वाले कॉल पहचानने में सहायता करता है।",
+
+"hero_badge": "एआई वित्तीय सुरक्षा सहायक"
 
 }

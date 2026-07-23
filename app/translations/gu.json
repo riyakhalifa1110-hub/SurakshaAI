@@ -12,7 +12,7 @@
   "url_scanner": "યુઆરએલ તપાસ",
   "call_transcript": "કોલ ટ્રાન્સક્રિપ્ટ",
 
-  "hero_badge": "AI આધારિત સાયબર સુરક્ષા",
+  
   "hero_title1": "સુરક્ષિત રહો",
   "hero_title2": "આર્થિક છેતરપિંડીથી",
   "hero_description": "AI ની મદદથી નકલી SMS, WhatsApp, UPI, ફિશિંગ વેબસાઇટ અને છેતરપિંડીના કોલથી સુરક્ષિત રહો.",
@@ -262,5 +262,36 @@
 "feature_read": "પરિણામ સાંભળો",
 "feature_multi": "બહુભાષી AI જવાબો",
 "upload_whatsapp_screenshot": "વોટ્સએપ સ્ક્રીનશોટ અપલોડ કરો",
-"upload_voice_recording": "વૉઇસ રેકોર્ડિંગ અપલોડ કરો"
+"upload_voice_recording": "વૉઇસ રેકોર્ડિંગ અપલોડ કરો",
+
+"popup_safe_title": "🟢 સુરક્ષિત",
+"popup_safe_heading": "✅ કોઈ છેતરપિંડી મળી નથી",
+"popup_safe_text": "આ સામગ્રી સુરક્ષિત લાગે છે.",
+"popup_safe_button": "👍 ઠીક છે",
+
+"popup_warning_title": "🟡 શંકાસ્પદ",
+"popup_warning_heading": "⚠️ સાવચેત રહો",
+"popup_warning_text": "આ સામગ્રીમાં શંકાસ્પદ સંકેતો મળ્યા છે.",
+"popup_warning_button": "👀 રિપોર્ટ જુઓ",
+
+"popup_scam_title": "🚨 છેતરપિંડી મળી",
+"popup_scam_heading": "❌ ઉચ્ચ જોખમવાળી સામગ્રી",
+"popup_scam_text1": "🚫 શંકાસ્પદ લિંક પર ક્લિક ન કરો.",
+"popup_scam_text2": "🔒 OTP, PIN અથવા બેંક વિગતો શેર ન કરો.",
+"popup_scam_button": "🛡 રિપોર્ટ વાંચો",
+
+"popup_risk_score": "જોખમ સ્કોર",
+
+
+"english": "🇬🇧 English",
+"hindi": "🇮🇳 हिन्दी",
+"gujarati": "🇮🇳 ગુજરાતી",
+
+
+
+"hero_subtitle": " પ્રથમ વખત ડિજિટલ બેન્કિંગ કરનાર લોકો, વરિષ્ઠ નાગરિકો અને ગ્રામ્ય ભારત માટે બનાવેલ.",
+"challenge_title": "ગ્રામ્ય ભારત માટે નાણાકીય સુરક્ષા",
+
+"challenge_description": "SurakshaAI પ્રથમ વખત ડિજિટલ બેન્કિંગ કરનાર લોકો, વરિષ્ઠ નાગરિકો અને ગ્રામ્ય સમુદાયોને AI ની મદદથી નકલી SMS, WhatsApp સ્કેમ, ખોટી UPI વિનંતીઓ, ફિશિંગ વેબસાઇટ્સ અને છેતરપિંડીયુક્ત કોલ ઓળખવામાં મદદ કરે છે.",
+"hero_badge": "એઆઈ નાણાકીય સુરક્ષા સહાયક"
 }
