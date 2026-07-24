@@ -64,7 +64,7 @@ class="btn btn-success mt-4 w-100">
 
 {% if result %}
 
-<div class="result-card">
+<div class="result-card" id="analysis-report">
 
 <div class="result-header">
 
@@ -178,6 +178,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const score = Number("{{ result.score }}");
 
+    function scrollToReport() {
+        const report = document.getElementById("analysis-report");
+        if (report) {
+            report.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+
     if (score === 0) {
 
         Swal.fire({
@@ -190,6 +200,10 @@ document.addEventListener("DOMContentLoaded", function () {
             `,
             confirmButtonText: "{{ t.popup_safe_button }}",
             confirmButtonColor: "#198754"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                scrollToReport();
+            }
         });
 
     }
@@ -206,6 +220,10 @@ document.addEventListener("DOMContentLoaded", function () {
             `,
             confirmButtonText: "{{ t.popup_warning_button }}",
             confirmButtonColor: "#ffc107"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                scrollToReport();
+            }
         });
 
     }
@@ -223,6 +241,10 @@ document.addEventListener("DOMContentLoaded", function () {
             `,
             confirmButtonText: "{{ t.popup_scam_button }}",
             confirmButtonColor: "#dc3545"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                scrollToReport();
+            }
         });
 
     }

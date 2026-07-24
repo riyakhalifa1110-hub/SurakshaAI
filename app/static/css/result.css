@@ -68,3 +68,8 @@
         transform:translateY(0);
     }
 }
+
+
+#analysis-report{
+    scroll-margin-top:100px;
+}
