@@ -74,25 +74,87 @@
 
     <hr class="my-5">
 
-    <h2 class="mb-4">{{ t.what_to_do }}</h2>
+<section class="pb-4">
 
-    <ul class="fs-5">
+    <h2 class="text-center mb-5">{{ t.what_to_do }}</h2>
 
-        <li>❌ {{ t.do1 }}</li>
+    <div class="row g-4">
 
-        <li>❌ {{ t.do2 }}</li>
+        <!-- DON'T DO -->
 
-        <li>❌ {{ t.do3 }}</li>
+        <div class="col-md-6">
 
-        <li>✅ {{ t.do4 }}</li>
+            <div class="card shadow border-danger h-100">
 
-        <li>✅ {{ t.do5 }}</li>
+                <div class="card-body">
 
-        <li>✅ {{ t.do6 }}</li>
+                    <h3 class="text-danger mb-4">
+                        ❌ {{ t.dont_do }}
+                    </h3>
 
-        <li>✅ {{ t.do7 }}</li>
+                    <ul class="list-unstyled fs-5">
 
-    </ul>
+                        <li class="mb-3">
+                            ❌ {{ t.do1 }}
+                        </li>
+
+                        <li class="mb-3">
+                            ❌ {{ t.do2 }}
+                        </li>
+
+                        <li class="mb-3">
+                            ❌ {{ t.do3 }}
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- DO IMMEDIATELY -->
+
+        <div class="col-md-6">
+
+            <div class="card shadow border-success h-100">
+
+                <div class="card-body">
+
+                    <h3 class="text-success mb-4">
+                        ✅ {{ t.do_now }}
+                    </h3>
+
+                    <ul class="list-unstyled fs-5">
+
+                        <li class="mb-3">
+                            ✅ {{ t.do4 }}
+                        </li>
+
+                        <li class="mb-3">
+                            ✅ {{ t.do5 }}
+                        </li>
+
+                        <li class="mb-3">
+                            ✅ {{ t.do6 }}
+                        </li>
+
+                        <li class="mb-3">
+                            ✅ {{ t.do7 }}
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 </div>
 

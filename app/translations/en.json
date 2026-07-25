@@ -287,7 +287,23 @@
 
 "challenge_description": "SurakshaAI helps first-time digital banking users, senior citizens and rural communities detect fake SMS, WhatsApp scams, fraudulent UPI requests, phishing websites and scam calls using Artificial Intelligence.",
 
-"hero_badge": "AI Financial Safety Assistant"
+"hero_badge": "AI Financial Safety Assistant",
+
+
+"why_choose_title": "Why Choose SurakshaAI",
+"why_choose_desc": "Powerful AI features designed to protect you from financial fraud.",
+
+"feature1_title": "AI Scam Detection",
+"feature1_desc": "Instantly detects fake SMS, WhatsApp scams, phishing links, UPI fraud and scam calls.",
+
+"feature2_title": "Multilingual Support",
+"feature2_desc": "Available in English, Hindi and Gujarati for easy access by all users.",
+
+"feature3_title": "Smart Safety Advice",
+"feature3_desc": "Explains why content is risky and provides clear recommendations to stay safe.",
+
+"dont_do": "Don't Do This",
+"do_now": "Do This Immediately"
 
 
 

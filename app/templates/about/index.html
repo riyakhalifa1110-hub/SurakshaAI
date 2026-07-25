@@ -102,25 +102,44 @@
 
 <div class="col-lg-4 col-md-6">
 
-<div class="info-card h-100">
+    <div class="info-card h-100">
 
-<h3>🤖 {{ t.ai_technology }}</h3>
+        <h3>🤖 {{ t.ai_technology }}</h3>
 
-<ul>
+        <div class="tech-group">
 
-<li>{{ t.technology_python }}</li>
-<li>{{ t.technology_flask }}</li>
-<li>{{ t.technology_groq }}</li>
-<li>{{ t.technology_frontend }}</li>
-<li>{{ t.technology_js }}</li>
-<li>{{ t.technology_ocr }}</li>
-<li>{{ t.technology_speech }}</li>
-<li>{{ t.technology_tts }}</li>
-<li>{{ t.technology_nlp }}</li>
+            <h5>💻 Backend</h5>
 
-</ul>
+            <ul>
+                <li>{{ t.technology_python }}</li>
+                <li>{{ t.technology_flask }}</li>
+            </ul>
 
-</div>
+            <h5>🤖 Artificial Intelligence</h5>
+
+            <ul>
+                <li>{{ t.technology_groq }}</li>
+                <li>{{ t.technology_nlp }}</li>
+            </ul>
+
+            <h5>🎨 Frontend</h5>
+
+            <ul>
+                <li>{{ t.technology_frontend }}</li>
+                <li>{{ t.technology_js }}</li>
+            </ul>
+
+            <h5>⚙️ Additional Features</h5>
+
+            <ul>
+                <li>{{ t.technology_ocr }}</li>
+                <li>{{ t.technology_speech }}</li>
+                <li>{{ t.technology_tts }}</li>
+            </ul>
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -166,10 +185,14 @@
 
 <h3>🌍 {{ t.supported_languages }}</h3>
 
-<ul>
-<li>🇬🇧 {{ t.english_language }}</li>
-<li>🇮🇳 {{ t.hindi_language }}</li>
-<li>🇮🇳 {{ t.gujarati_language }}</li>
+<ul class="feature-list">
+
+    <li>{{ t.english_language }}</li>
+
+    <li>{{ t.hindi_language }}</li>
+
+    <li>{{ t.gujarati_language }}</li>
+
 </ul>
 
 </div>
