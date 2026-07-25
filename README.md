@@ -213,7 +213,7 @@ SurakshaAI
 
 **Developed for**
 
-Maverick AI Challenge
+Maverick AI Challenge 2026
 
 ---
 
