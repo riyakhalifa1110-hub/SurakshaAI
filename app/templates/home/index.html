@@ -287,41 +287,25 @@
             <p class="text-muted">{{ t.impact_desc }}</p>
         </div>
 
-        <div class="row g-4">
+        <div class="row justify-content-center g-4">
 
-            <!-- Messages -->
-            <div class="col-lg-3 col-md-6 col-6">
-                <div class="stat-card">
-                    <h1 class="text-primary counter" data-target="10000">0</h1>
-                    <p>{{ t.messages }}</p>
-                </div>
-            </div>
-
-            <!-- Scams -->
-            <div class="col-lg-3 col-md-6 col-6">
-                <div class="stat-card">
-                    <h1 class="text-danger counter" data-target="3000">0</h1>
-                    <p>{{ t.scams }}</p>
-                </div>
-            </div>
-
-            <!-- Accuracy -->
-            <div class="col-lg-3 col-md-6 col-6">
-                <div class="stat-card">
-                    <h1 class="text-success counter-percent" data-target="99">0%</h1>
-                    <p>{{ t.accuracy }}</p>
-                </div>
-            </div>
-
-            <!-- Protection -->
-            <div class="col-lg-3 col-md-6 col-6">
-                <div class="stat-card">
-                    <h1 class="text-info">24/7</h1>
-                    <p>{{ t.protection }}</p>
-                </div>
-            </div>
-
+    <!-- Accuracy -->
+    <div class="col-lg-4 col-md-5 col-sm-6">
+        <div class="stat-card text-center">
+            <h1 class="text-success counter-percent" data-target="99">0%</h1>
+            <p>{{ t.accuracy }}</p>
         </div>
+    </div>
+
+    <!-- Protection -->
+    <div class="col-lg-4 col-md-5 col-sm-6">
+        <div class="stat-card text-center">
+            <h1 class="text-info">24/7</h1>
+            <p>{{ t.protection }}</p>
+        </div>
+    </div>
+
+</div>
 
     </div>
 
