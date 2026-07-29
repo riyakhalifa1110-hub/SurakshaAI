@@ -1,8 +1,8 @@
-const counters = document.querySelectorAll(".counter");
+const statCounters = document.querySelectorAll(".stat-number");
 
 const speed = 150;
 
-counters.forEach(counter => {
+statcounters.forEach(counter => {
 
     const update = () => {
 

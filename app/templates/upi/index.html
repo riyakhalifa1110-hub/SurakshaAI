@@ -260,7 +260,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </section>
 
-{% endblock %}
 
 
 </div>
@@ -341,61 +340,91 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
 </script>
 <script>
 
-const speakBtn=document.getElementById("speakBtn");
+const speakBtn = document.getElementById("speakBtn");
 
-if(speakBtn){
+if (speakBtn) {
 
-let speaking=false;
+    let speaking = false;
 
-speakBtn.onclick=()=>{
+    speakBtn.onclick = () => {
 
-if(speaking){
+        if (speaking) {
+            window.speechSynthesis.cancel();
+            speaking = false;
+            speakBtn.innerHTML = "🔊 {{ t.read_result }}";
+            return;
+        }
 
-window.speechSynthesis.cancel();
+        const reasons =
+            document.querySelector(".reason-box");
 
-speaking=false;
+        const advice =
+            document.querySelector(".advice-box");
 
-speakBtn.innerHTML="🔊 {{ t.read_result }}";
+        let text = "";
 
-return;
+        if (reasons)
+            text += reasons.innerText + ". ";
 
-}
+        if (advice)
+            text += advice.innerText;
 
-const result=document.getElementById("analysisResult");
+        if (!text.trim()) {
+            alert("Nothing to read.");
+            return;
+        }
 
-if(!result) return;
+        const speech = new SpeechSynthesisUtterance(text);
 
-const speech=new SpeechSynthesisUtterance(result.innerText);
+        // Language Support
+        const lang = "{{ current_language }}";
 
-speech.lang="en-IN";
+        if (lang === "hi")
+            speech.lang = "hi-IN";
+        else if (lang === "gu")
+            speech.lang = "gu-IN";
+        else
+            speech.lang = "en-IN";
 
-speech.rate=1;
+        speech.rate = 1;
 
-speech.pitch=1;
+        speech.pitch = 1;
 
-speech.onstart=()=>{
+        speech.onstart = () => {
 
-speaking=true;
+            speaking = true;
 
-speakBtn.innerHTML="⏹ {{ t.stop_reading }}";
+            speakBtn.innerHTML =
+                "⏹ {{ t.stop_reading }}";
 
-};
+        };
 
-speech.onend=()=>{
+        speech.onend = () => {
 
-speaking=false;
+            speaking = false;
 
-speakBtn.innerHTML="🔊 {{ t.read_result }}";
+            speakBtn.innerHTML =
+                "🔊 {{ t.read_result }}";
 
-};
+        };
 
-window.speechSynthesis.cancel();
+        speech.onerror = () => {
 
-window.speechSynthesis.speak(speech);
+            speaking = false;
 
-};
+            speakBtn.innerHTML =
+                "🔊 {{ t.read_result }}";
+
+        };
+
+        window.speechSynthesis.cancel();
+
+        window.speechSynthesis.speak(speech);
+
+    };
 
 }
 
 </script>
 
+{% endblock %}
